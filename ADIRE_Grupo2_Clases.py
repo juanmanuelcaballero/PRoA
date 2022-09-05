@@ -11,8 +11,8 @@ class persona:
         self.rol = rol
 #espacios inecesarios 
 
-class bomberos:
-    def __init__(self, cargo, cuartel, servicio, nombreusuario, contrasena, iniciarsesion, cargardatos, editardatos, verdatos, cargararticulos, verarticulos, modificararticulos, cargarrodados, modificarrodados, verrodados, cargarregistroeconomico, modificarregistroeconomico, verregistroeconomico, editarcuenta):
+class bomberos(persona):
+    def __init__(self, cargo, cuartel, servicio, nombreusuario, contrasena):
         self.cargo = cargo
         self.cuartel = cuartel
         self.servicio = servicio
@@ -72,11 +72,11 @@ class rodados:
         self.fechavencimiento = fechavencimiento
 
 class consultas:
-    def __init__(self, equipamentorodado):
-        self.equipamentorodado = equipamentorodado
+    def __init__(self, equipamientorodado):
+        self.equipamientorodado = equipamientorodado
 
 class registros_economicos:
-    def __init__ (self, ingresos, egresos, fecha, motivoingreso, motivoegreso,nfactura):
+    def __init__ (self, ingresos, egresos, fecha, motivoingreso, motivoegreso, nfactura):
         self.ingresos = ingresos
         self.egresos = egresos
         self.fecha = fecha
