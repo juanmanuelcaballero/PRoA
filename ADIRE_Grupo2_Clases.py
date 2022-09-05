@@ -72,8 +72,8 @@ class rodados:
         self.fechavencimiento = fechavencimiento
 
 class consultas:
-    def __init__(self, equipamentorodado):
-        self.equipamentorodado = equipamentorodado
+    def __init__(self, equipamientorodado):
+        self.equipamientorodado = equipamientorodado
 
 class registros_economicos:
     def __init__ (self, ingresos, egresos, fecha, motivoingreso, motivoegreso,nfactura):
