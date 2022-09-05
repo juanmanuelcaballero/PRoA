@@ -18,34 +18,34 @@ class bomberos:
         self.servicio = servicio
         self.nombreusuario = nombreusuario
         self.contrasena = contrasena
-        def iniciarsesion(self):
-            pass
-        def cargardatos(self):
-            pass
-        def editardatos(self):
-            pass
-        def verdatos(self):
-            pass 
-        def cargararticulos(self):
-            pass 
-        def verarticulos(self):
-            pass 
-        def modificararticulos(self):
-            pass 
-        def cargarrodados(self):
-            pass 
-        def modificarrodados(self):
-            pass 
-        def verrodados(self):
-            pass 
-        def cargarregistroeconomico(self):
-            pass 
-        def modificarregistroeconomico(self):
-            pass 
-        def verregistroeconomico(self):
-            pass 
-        def editarcuenta(self):
-            pass 
+    def iniciarsesion(self):
+        pass
+    def cargardatos(self):
+        pass
+    def editardatos(self):
+        pass
+    def verdatos(self):
+        pass 
+    def cargararticulos(self):
+        pass 
+    def verarticulos(self):
+        pass 
+    def modificararticulos(self):
+        pass 
+    def cargarrodados(self):
+        pass 
+    def modificarrodados(self):
+        pass 
+    def verrodados(self):
+        pass 
+    def cargarregistroeconomico(self):
+        pass 
+    def modificarregistroeconomico(self):
+        pass 
+    def verregistroeconomico(self):
+        pass 
+    def editarcuenta(self):
+        pass 
         
 
 
