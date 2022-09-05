@@ -76,7 +76,7 @@ class consultas:
         self.equipamientorodado = equipamientorodado
 
 class registros_economicos:
-    def __init__ (self, ingresos, egresos, fecha, motivoingreso, motivoegreso,nfactura):
+    def __init__ (self, ingresos, egresos, fecha, motivoingreso, motivoegreso, nfactura):
         self.ingresos = ingresos
         self.egresos = egresos
         self.fecha = fecha
