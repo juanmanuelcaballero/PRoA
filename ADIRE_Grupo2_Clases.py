@@ -5,10 +5,10 @@ class persona:
         self.dni = dni 
         self.fnacimiento = fnacimiento
         self.ID = ID 
-        self. numtelefono = numtelefono
+        self.numtelefono = numtelefono
         self.gmail = gmail
         self.domicilio = domicilio
-        self. rol = rol
+        self.rol = rol
 
 
 class bomberos:
@@ -53,7 +53,7 @@ class incidente:
     def __init__(self, tipo, lugar, damnificados, horasalida, fechasalida, horaretorno, fecharetorno, moviles, danos, horaincidente, horallegada):
         self.tipo = tipo
         self.lugar = lugar
-        self. damnificados = damnificados
+        self.damnificados = damnificados
         self.horasalida = horasalida
         self.fechasalida = fechasalida
         self.horaretorno = horaretorno
