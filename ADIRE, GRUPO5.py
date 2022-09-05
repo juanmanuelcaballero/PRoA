@@ -1,21 +1,21 @@
 class Personas:
-    def __init__(self, nombre, apellido, DNI, fecha_de_nacimiento, ID, rol, numero_de_telefono, gmail, direccion):
+    def __init__(self, nombre, apellido, DNI, fechanacimiento, ID, rol, numerotelefono, gmail, direccion):
         self.nombre = nombre
         self.apellido = apellido
         self.DNI = DNI
-        self.fecha_de_nacimiento = fecha_de_nacimiento
+        self.fechanacimiento = fechanacimiento
         self.ID = ID
         self.rol = rol
-        self.numero_de_telefono = numero_de_telefono
+        self.numerotelefono = numerotelefono
         self.gmail = gmail
         self.direccion = direccion 
         
 class Bomberos(Personas):
-    def __init__(self, cargo, cuartel, usuario, contrasenia):
+    def __init__(self, cargo, cuartel, usuario, contrasena):
         self.cargo = cargo
         self.cuartel = cuartel
         self.usuario = usuario
-        self.contrasenia = contrasenia
+        self.contrasena = contrasena
     def iniciarsesion(self):
         print("iniciar sesion")
     def editarcuenta(self):
@@ -46,36 +46,36 @@ class Bomberos(Personas):
         print("ver registro economico")
         
 class Incidentes:
-    def __init__(self,lugar,tipo,damnificados,dotacion,fecha_salida,hora_salida,fecha_retorno,hora_retorno,moviles,danios,hora_de_llegada_al_accidente,hora_de_incidente):
+    def __init__(self,lugar,tipo,damnificados,dotacion,fechasalida,horasalida,fecharetorno,horaretorno,moviles,danos,horallegadaaccidente,horaincidente):
         self.lugar = lugar
         self.tipo = tipo
         self.damnificados = damnificados
         self.dotacion = dotacion
-        self.fecha_salida = fecha_salida
-        self.hora_salida = hora_salida
-        self.fecha_retorno = fecha_retorno
-        self.hora_retorno = hora_retorno
+        self.fechasalida = fechasalida
+        self.horasalida = horasalida
+        self.fecharetorno = fecharetorno
+        self.horaretorno = horaretorno
         self.moviles = moviles
-        self.danios = danios
-        self.hora_de_llegada_al_accidente = hora_de_llegada_al_accidente
-        self.hora_de_incidente = hora_de_incidente
+        self.danos = danos
+        self.horallegadaaccidente = horallegadaaccidente
+        self.horaincidente = horaincidente
 
 class Articulo:
     def __init__(self, tipo, estado):
         self.tipo = tipo
         self.estado = estado
 class Rodados:
-    def __init__(self, patente, seguro, numero_de_poliza, fechavencimiento):
+    def __init__(self, patente, seguro, numeropoliza, fechavencimiento):
         self.patente = patente
         self.seguro = seguro
-        self.numero_de_poliza = numero_de_poliza
+        self.numeropoliza = numeropoliza
         self.fechavencimiento = fechavencimiento
 class RegistrosEconomicos:
-    def __init__(self, ingresos, egresos, fecha, motivo_de_ingreso, motivo_de_egreso, num_factura):
+    def __init__(self, ingresos, egresos, fecha, motivoingreso, motivoegreso, numfactura):
         self.ingresos = ingresos
         self.egresos = egresos
         self.fecha = fecha
-        self.motivo_de_ingreso = motivo_de_ingreso
-        self.motivo_de_egreso = motivo_de_egreso
-        self.num_factura = num_factura
+        self.motivoingreso = motivoingreso
+        self.motivoegreso = motivoegreso
+        self.numfactura = numfactura
         
