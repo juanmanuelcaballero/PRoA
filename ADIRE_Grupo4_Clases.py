@@ -14,41 +14,41 @@ class persona:
         self.domicilio = domicilio
         self.rol = rol
 
-class bomberos:
+class bomberos(persona):
     def __init__(self, cargo, cuartel, servicio, nombreusuario, contrasenia, iniciarsesion, cargardatos, editardatos, verdatos, cargararticulos, verarticulos, modificararticulos, cargarrodados, modificarrodados, verrodados, cargarregistroeconomico, modificarregistroeconomico, verregistroeconomico, editarcuenta):
         self.cargo = cargo
         self.cuartel = cuartel
         self.servicio = servicio
         self.nombreusuario = nombreusuario
         self.contrasenia = contrasenia
-        def iniciarsesion(self):
-            pass
-        def cargardatos(self):
-            pass
-        def editardatos(self):
-            pass
-        def verdatos(self):
-            pass 
-        def cargararticulos(self):
-            pass 
-        def verarticulos(self):
-            pass 
-        def modificararticulos(self):
-            pass 
-        def cargarrodados(self):
-            pass 
-        def modificarrodados(self):
-            pass 
-        def verrodados(self):
-            pass 
-        def cargarregistroeconomico(self):
-            pass 
-        def modificarregistroeconomico(self):
-            pass 
-        def verregistroeconomico(self):
-            pass 
-        def editarcuenta(self):
-            pass 
+    def iniciarsesion(self):
+        pass
+    def cargardatos(self):
+        pass
+    def editardatos(self):
+        pass
+    def verdatos(self):
+        pass 
+    def cargararticulos(self):
+        pass 
+    def verarticulos(self):
+        pass 
+    def modificararticulos(self):
+        pass 
+    def cargarrodados(self):
+        pass 
+    def modificarrodados(self):
+        pass 
+    def verrodados(self):
+        pass 
+    def cargarregistroeconomico(self):
+        pass 
+    def modificarregistroeconomico(self):
+        pass 
+    def verregistroeconomico(self):
+        pass 
+    def editarcuenta(self):
+        pass 
         
 class incidente:
     def __init__(self, tipo, lugar, damnificados, horadesalida, fechadesalida, horaderetorno, fechaderetorno, moviles, daños, horadelincidente, horadellegada):
