@@ -54,7 +54,7 @@ class Incidentes:
         self.fecha_salida = fecha_salida
         self.hora_salida = hora_salida
         self.fecha_retorno = fecha_retorno
-        self.hora_retorno = hora_retoron
+        self.hora_retorno = hora_retorno
         self.moviles = moviles
         self.danios = danios
         self.hora_de_llegada_al_accidente = hora_de_llegada_al_accidente
@@ -73,7 +73,7 @@ class Rodados:
 class RegistrosEconomicos:
     def __init__(self, ingresos, egresos, fecha, motivo_de_ingreso, motivo_de_egreso, num_factura):
         self.ingresos = ingresos
-        self.egresos = esgreso
+        self.egresos = egresos
         self.fecha = fecha
         self.motivo_de_ingreso = motivo_de_ingreso
         self.motivo_de_egreso = motivo_de_egreso
