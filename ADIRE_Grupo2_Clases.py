@@ -12,7 +12,7 @@ class persona:
 
 
 class bomberos:
-    def __init__(self, cargo, cuartel, servicio, nombreusuario, contrasena, iniciarsesion, cargardatos, editardatos, verdatos, cargararticulos, verarticulos, modificararticulos, cargarrodados, modificarrodados, verrodados, cargarregistroeconomico, modificarregistroeconomico, verregistroeconomico, editarcuenta):
+    def __init__(self, cargo, cuartel, servicio, nombreusuario, contrasena):
         self.cargo = cargo
         self.cuartel = cuartel
         self.servicio = servicio
