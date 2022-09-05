@@ -11,7 +11,7 @@ class persona:
         self.rol = rol
 
 
-class bomberos:
+class bomberos(persona):
     def __init__(self, cargo, cuartel, servicio, nombreusuario, contrasena):
         self.cargo = cargo
         self.cuartel = cuartel

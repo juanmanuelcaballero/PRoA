@@ -14,7 +14,7 @@ class persona:
         self.domicilio = domicilio
         self.rol = rol
 
-class bomberos:
+class bomberos(persona):
     def __init__(self, cargo, cuartel, servicio, nombreusuario, contrasenia, iniciarsesion, cargardatos, editardatos, verdatos, cargararticulos, verarticulos, modificararticulos, cargarrodados, modificarrodados, verrodados, cargarregistroeconomico, modificarregistroeconomico, verregistroeconomico, editarcuenta):
         self.cargo = cargo
         self.cuartel = cuartel
