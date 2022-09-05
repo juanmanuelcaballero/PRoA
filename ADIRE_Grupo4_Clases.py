@@ -1,7 +1,7 @@
-from kivymd.app import MDApp
+"""from kivymd.app import MDApp
 from kivy.lang import Builder
 from kivy.uix.button import Button
-from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.uix.screenmanager import ScreenManager, Screen"""
 class persona:
     def __init__ (self, nombre, apellido, dni, fnacimiento, ID, numtelefono, gmail, domicilio, rol):
         self.nombre = nombre
@@ -90,7 +90,7 @@ class registros_economicos:
         self.motivoingreso = motivoingreso
         self.motivoegreso = motivoegreso
         self.nfactura = nfactura
-
+#
 class Inicio(Screen):
     pass
 KV = '''
@@ -109,4 +109,4 @@ class asd(MDApp):
     def build(self):
         return Builder.load_string(KV)
 
-asd().run()
+asd().run()#

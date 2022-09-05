@@ -44,7 +44,7 @@ class Bomberos(Personas):
         print("editar registro economico")
     def verRegisEconomico(self):
         print("ver registro economico")
-        
+#El texto de los prints esta de mas         
 class Incidentes:
     def __init__(self,lugar,tipo,damnificados,dotacion,fecha_salida,hora_salida,fecha_retorno,hora_retorno,moviles,danios,hora_de_llegada_al_accidente,hora_de_incidente):
         self.lugar = lugar
