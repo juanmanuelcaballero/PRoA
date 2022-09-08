@@ -100,8 +100,8 @@ MDBoxLayout:
     MDTopAppBar:
         title: "asd"
 
-    MDLabel:
-        text: "Content"
+    Button:
+        text: "asddsa"
         halign: "center"
 '''
 

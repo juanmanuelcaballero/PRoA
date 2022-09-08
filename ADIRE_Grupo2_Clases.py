@@ -3,7 +3,7 @@ class persona:
         self.nombre = nombre
         self.apellido = apellido
         self.dni = dni 
-        self.fnacimiento = fnacimiento
+        self.fnacimiento = fnacimiento #muy buen trabajo
         self.ID = ID 
         self.numtelefono = numtelefono
         self.gmail = gmail
