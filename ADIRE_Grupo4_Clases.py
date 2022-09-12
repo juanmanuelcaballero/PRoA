@@ -1,7 +1,3 @@
-from inspect import walktree
-from ossaudiodev import SOUND_MIXER_SYNTH
-from tkinter import W
-from uuid import RFC_4122
 from kivymd.app import MDApp
 from kivy.lang import Builder
 from kivy.uix.button import Button
@@ -44,7 +40,8 @@ class personal:
         pass 
     def editarcuenta(self):
         pass 
-        
+    def imprimir(self):
+        print(self.nombre, self.apellido, self.dni, self.fnacimiento, self.numtelefono, self.gmail, self.domicilio, self.rango)    
 class incidente:
     def __init__(self, tipo, lugar, damnificados, horadesalida, fechadesalida, horaderetorno, fechaderetorno, moviles, daños, horadelincidente, horadellegada):
         self.tipo = tipo
@@ -67,11 +64,15 @@ class articulos:
         self.cantidad = cantidad
 
 class rodados:
-    def __init__(self, patente, seguro, numerodepoliza, fechadevencimiento):
+    def __init__(self, patente, seguro, numerodepoliza, fechadevencimiento, equipamiento):
         self.patente = patente
         self.seguro = seguro
         self.numerodepoliza = numerodepoliza
         self.fechadevencimiento = fechadevencimiento
+        self.equipamiento = equipamiento
+    def imprimir(self):
+        print(self.patente, self.seguro, self.numerodepoliza, self.fechadevencimiento, self.equipamiento)
+
 
 class consultas:
     def __init__(self, equipamientoderodado):
@@ -111,7 +112,7 @@ class asd(MDApp):
         return Builder.load_string(KV)
 
 
-a = personal("Caleb" "Wharton", 95966365, "4-10-1979", "+54 221 3101100", "cwharton@yahoo.com", "512, 954", "Aspirante" )
+a = personal("Caleb", "Wharton", 95966365, "4-10-1979", "+54 221 3101100", "cwharton@yahoo.com", "512, 954", "Aspirante" )
 b =personal("Aiden", "Walker",95966366,  "8-10-2000", "+54 221 3174023", "awalker@hotmail.com", "Los manantiales, 444", "Aspirante")
 c =personal("Jane", "Su", 95966367, "5-7-1980", " +54 221 3534666", "jsu@outlook.com", "Maracaibo, 678", "Cabo")
 d =personal("Jack", "Ross", 95966368, "9-9-1999", " +54 221 4341806", "jackr@yahoo.com",  "hUTLINGHAM, 246", "Cadete" )
@@ -125,3 +126,60 @@ j = personal("Aegan", "Cash", 95966374, "19-03-1997",  "+54 221 6613526", "yosit
 R1 = rodados("RPF-321","Rivadavia","12345678", "5-3-2025", "Vacío")
 R2 = rodados("PIF-430","Greenday","87654321", "18-1-2021", "Vacío" )
 R3 = rodados("JCJ-232","Sancor","45687312", "29-12-2028", "Vacío" )
+
+
+valor2=input("¿que quieres persona(1) o rodado(2)? ")
+if valor2 == "1":
+    print("""Ingrese los sisuientes datos:
+    Nombre
+    Apellido
+    DNI
+    Fecha de nacimiento
+    Numero de telefono
+    Gmail
+    Domicilio
+    Rango""")
+    vari2= []
+    for persona in range (9):
+        jfdjfjk= input()
+        vari2.append(jfdjfjk)
+    ae=personal(vari2[0],vari2[1],vari2[2],vari2[3],vari2[4],vari2[5],vari2[6],vari2[7])
+else:
+    print("""Ingrese los siguientes datos:
+    Patente
+    Seguro
+    Numero de poliza
+    Fecha de vencimiento
+    Equipamiento""")
+    vari=[]
+    for rodado in range(5):
+        hdifej=input()
+        vari.append(hdifej)
+    aed=rodados(vari[0],vari[1],vari[2],vari[3],vari[4])
+
+a.imprimir()
+b.imprimir()
+c.imprimir()
+d.imprimir()
+e.imprimir()
+f.imprimir()
+g.imprimir()
+h.imprimir()
+i.imprimir()
+j.imprimir()
+try:
+    ae.imprimir()
+except:
+    pass
+R1.imprimir()
+R2.imprimir()
+R3.imprimir()
+try:
+    aed.imprimir()
+except:
+    pass
+
+
+    
+
+
