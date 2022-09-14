@@ -96,18 +96,49 @@ print (persona9)
 print (persona10)
 
 
+#creo lista
+l=[]
 
-print=("Ingrese los siguientes datos: ")
+
+#asigno valores a las variables
+print("-------")
+print("-------")
+print("-------")
+print("Ingrese los siguientes datos: ")
 nombre=input("Nombre:")
-apellido = input ("Apellido:")
-DNI = input ("DNI:")
-fecha_de_nacimiento = input ("Fecha de nacimiento:")
-ID = input ("ID:")
-rol = input ("Rol:")
-numero_de_telefono = input ("Numero de telefono:")
-gmail = input ("Gmail:")
-direccion = input ("Direccion:")
-cargo = input ("Cargo:")
-cuartel = input ("Cuartel:")
-usuario = input ("Usuario:")
-contrasenia = input ("Contraseña:")
+apellido=input("Apellido:")
+DNI=int(input("DNI: "))
+fechanacimiento=input("Fecha de nacimiento: ")
+ID=int(input("ID: "))
+rol=input("Rol: ")
+numtelefono=int(input("Numero de telefono: "))
+gmail=input("Gmail: ")
+direccion=input("Direccion: ")
+cargo=input("Cargo:")
+cuartel=input("Cuartel: ")
+usuario=input("Usuario: ")
+contrasenia=input("Contraseña: ")
+
+
+#ingreso las variables a la lista
+l.append(nombre)
+l.append(apellido)
+l.append(DNI)
+l.append(fechanacimiento)
+l.append(ID)
+l.append(rol)
+l.append(numtelefono)
+l.append(gmail)
+l.append(direccion)
+l.append(cargo)
+l.append(cuartel)
+l.append(usuario)
+l.append(contrasenia)
+
+#imprimo la lista ysi
+print(l)
+
+#ignoren esto, solo lo puse porque quiero preguntar si esta bien o es cualquier verdura lol
+#l2= []
+#l2.append(Bomberos("Leonel", "Messi", 46722652, "18/8/1982", 12345, "cabo", 455672, "messileonelAgmail.com", "islas malvinas 23", "sub jefe", "31/7", "lmessi", "Argentina2019"))
+#print(l2)
