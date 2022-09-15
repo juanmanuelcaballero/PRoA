@@ -90,7 +90,7 @@ persona10 = ("Agostina","Pate", 45671235, "25/12/1999", 10, "Aguatero Suplente",
 veiculo1 = ("123fgh","12/2024", 12345678,"san cristobal seguros")
 veiculo2 = ("845ibe", "01/2027", 65815432, "san cristobal seguros")
 veiculo3 = ("945tds", "08/2031", 53987123, "san cristobal seguros")
-x = input("Ingrese 1 si es persona y 2 si es vehículo: ")
+x = input("Ingrese 1 si es persona y 2 si es vehículo 3 para dotacion: ")
 
 if x == "1":
     print("Ingrese una persona")
@@ -115,6 +115,29 @@ elif x == "2":
     k = input("seguro: ")
     lista2=[y,n,i,k, veiculo1, veiculo2, veiculo3]
     print(lista2)
+
+elif x == "3":
+    ff = input("Ingrese nombre: ")
+    ss = input("Ingrese apellido: ")
+    df = input("Ingrese DNI: ")
+    dfg = input("Ingrese direccion: ")
+    sdfg = input("Ingrese ubicacion: ")
+    lista3 = [ff, ss, df, dfg, sdfg]
+    print(lista3)
     
 else:
     print("Número incorrecto")
+
+
+
+class dotacion:
+    def __init__(self, nombre, apellido, DNI, direccion, ubicacion):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.DNI = DNI
+        self.direccion = direccion
+
+dotacion1 = ("roberto", "sala", 56438743, "25 de mayo", "buenos Aires")
+
+
+
