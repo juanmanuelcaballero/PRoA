@@ -42,6 +42,7 @@ class personal:
         pass 
     def imprimir(self):
         print(self.nombre, self.apellido, self.dni, self.fnacimiento, self.numtelefono, self.gmail, self.domicilio, self.rango)    
+        print("")
 class incidente:
     def __init__(self, tipo, lugar, damnificados, horadesalida, fechadesalida, horaderetorno, fechaderetorno, moviles, daños, horadelincidente, horadellegada):
         self.tipo = tipo
@@ -72,7 +73,7 @@ class rodados:
         self.equipamiento = equipamiento
     def imprimir(self):
         print(self.patente, self.seguro, self.numerodepoliza, self.fechadevencimiento, self.equipamiento)
-
+        print("")
 
 class consultas:
     def __init__(self, equipamientoderodado):
@@ -122,7 +123,7 @@ g =personal("Scarlett", "Dragna", 95966371, "24-6-2001","+54 221 5021283", "scar
 h =personal("Carl", "White", 95966372, "5-2-2007", "+54 221 5716293", "cwhite@yahoo.com", "Chile, 234", "Aspirante")
 i =personal("Andrew", "Smith", 95966373, "15-9-1994", "+54 221 5856712", "asmith@gmail.com", "Washington DC, 453", "Jefe")
 j = personal("Aegan", "Cash", 95966374, "19-03-1997",  "+54 221 6613526", "yositehubieraelegidoati@hotmail.com","Tagus, 0319", "Aspirante")
-
+bomberoslista=[a,b,c,d,e,f,g,h,i,j]
 R1 = rodados("RPF-321","Rivadavia","12345678", "5-3-2025", "Vacío")
 R2 = rodados("PIF-430","Greenday","87654321", "18-1-2021", "Vacío" )
 R3 = rodados("JCJ-232","Sancor","45687312", "29-12-2028", "Vacío" )
@@ -178,6 +179,31 @@ try:
     aed.imprimir()
 except:
     pass
+hh=[]
+X=True
+while X==True:
+    print("Ingrese DNI de bomberos para dotación: ")
+    DNIdotacion = input()
+    try:
+        DNIdotacion=int(DNIdotacion)
+        hh.append(DNIdotacion)
+    except:
+        X=False
+        break
+
+#for b in bomberoslista:
+ #           for i in hh:
+        #        if b.dni == i:
+         #           break
+          #      else:
+           #         print("El bombero que llamó no está registrado")                                                      
+
+for q in bomberoslista:
+    if q.dni == DNIdotacion:
+        break
+    else:
+        print("El bombero que ingresó no existe")
+        break                               
 
 
     
