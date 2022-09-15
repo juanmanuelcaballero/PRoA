@@ -65,7 +65,7 @@ class rodados(articulos):
         self.patente= patente
         self.numero_de_poliza= numero_de_poliza
         self.seguro= seguro
-        self.fechadevencimieto= fecha_de_vencimineto
+        self.fechadevencimieto= fecha_de_vencimiento
 class registros_economicos:
     def __init__(self,ingresos,egresos,numero_factura,fecha,motivo_de_ingreso,motivo_de_egreso):
         self.ingresos=ingresos
@@ -87,10 +87,10 @@ persona9 = ("Agustin","guzaman", 23456789, "9/5/2000", 9, "coronelII", "Santa Cr
 persona10 = ("Agostina","Pate", 45671235, "25/12/1999", 10, "Aguatero Suplente", "Mendoza", "Aguitarefrescante", "refrecanteaguita", "aguaaaaa@bomberos.com.ar", 2345671234)
 
 
-veiculo1 = ("123fgh","12/2024", 12345678,"san cristobal seguros")
-veiculo2 = ("845ibe", "01/2027", 65815432, "san cristobal seguros")
-veiculo3 = ("945tds", "08/2031", 53987123, "san cristobal seguros")
-x = input("Ingrese 1 si es persona y 2 si es vehículo 3 para dotacion: ")
+vehiculo1 = ("123fgh","12/2024", 12345678,"san cristobal seguros")
+vehiculo2 = ("845ibe", "01/2027", 65815432, "san cristobal seguros")
+vehiculo3 = ("945tds", "08/2031", 53987123, "san cristobal seguros")
+x = input("Ingrese 1 si es persona, 2 si es vehículo o 3 para dotacion: ")
 
 if x == "1":
     print("Ingrese una persona")
@@ -108,12 +108,12 @@ if x == "1":
     print(lista1) 
 
 elif x == "2":
-    print("Ingrese un veiculo")
+    print("Ingrese un vehiculo")
     y = input("numero de matricula: ")
     n = input("fecha de vencimiento: ")
     i = input("numero de poliza: ")
     k = input("seguro: ")
-    lista2=[y,n,i,k, veiculo1, veiculo2, veiculo3]
+    lista2=[y,n,i,k, vehiculo1, vehiculo2, vehiculo3]
     print(lista2)
 
 elif x == "3":
@@ -127,17 +127,3 @@ elif x == "3":
     
 else:
     print("Número incorrecto")
-
-
-
-class dotacion:
-    def __init__(self, nombre, apellido, DNI, direccion, ubicacion):
-        self.nombre = nombre
-        self.apellido = apellido
-        self.DNI = DNI
-        self.direccion = direccion
-
-dotacion1 = ("roberto", "sala", 56438743, "25 de mayo", "buenos Aires")
-
-
-
