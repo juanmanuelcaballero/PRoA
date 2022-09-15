@@ -142,3 +142,18 @@ print(l)
 #l2= []
 #l2.append(Bomberos("Leonel", "Messi", 46722652, "18/8/1982", 12345, "cabo", 455672, "messileonelAgmail.com", "islas malvinas 23", "sub jefe", "31/7", "lmessi", "Argentina2019"))
 #print(l2)
+
+lr=[]
+print("-------")
+print("-------")
+print("-------")
+print("Ingrese los siguientes datos: ")
+patente=input("Patente:")
+seguro=input("Seguro:")
+fechaVencimiento=input("Fecha de vencimiento: ")
+numPoliza=int(input("Numero de poliza: "))
+lr.append(patente)
+lr.append(seguro)
+lr.append(fechaVencimiento)
+lr.append(numPoliza)
+print(lr)
