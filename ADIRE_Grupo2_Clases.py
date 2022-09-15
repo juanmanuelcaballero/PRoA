@@ -9,7 +9,7 @@ class persona:
         self.gmail = gmail
         self.domicilio = domicilio
         self.rol = rol
-
+#espacios inecesarios 
 
 class bomberos(persona):
     def __init__(self, cargo, cuartel, servicio, nombreusuario, contrasena):
