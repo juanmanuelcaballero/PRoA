@@ -79,15 +79,17 @@ class Incidentes:
 
 
 class Rodados:
-    def __init__(self, patente, seguro, numero_de_poliza, fechavencimiento):
+    def __init__(self, patente, seguro, numeroPoliza, fechaVencimiento):
         self.patente = patente
         self.seguro = seguro
-        self.numero_de_poliza = numero_de_poliza
-        self.fechavencimiento = fechavencimiento
+        self.numeroPoliza = numeroPoliza
+        self.fechaVencimiento = fechaVencimiento
+    def __str__(self):
+        return f"{self.patente} {self.seguro} {self.numeroPoliza} {self.fechaVencimiento}"
 
-rodado1= ("jrl 354", "sancor", 54769875, "17/4/2023")
-rodado2= ("lor 999", "sancor", 65432875, "17/4/2023")
-rodado1= ("sqm 654", "sancor", 54769567, "17/4/2023")
+rodado1= Rodados("jrl 354", "sancor", 54769875, "17/4/2023")
+rodado2= Rodados("lor 999", "sancor", 65432875, "17/4/2023")
+rodado1= Rodados("sqm 654", "sancor", 54769567, "17/4/2023")
 
 
 print (persona1)
@@ -101,6 +103,7 @@ print (persona8)
 print (persona9)
 print (persona10)
 
+print(rodado1)
 
 l=[]
 print("-------")
