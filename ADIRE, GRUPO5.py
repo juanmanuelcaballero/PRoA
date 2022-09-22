@@ -162,11 +162,12 @@ print(lr)
 
 
 dotacionL =[]
-dotacionL.append(persona1)
-dotacionL.append(persona3)
-dotacionL.append(persona9)
-dotacionL.append(persona5)
-dotacionL.append(persona7)
+dotacionL.append("La dotacion que acudió al incidente fue conformada por los bomberos: ")
+dotacionL.append("Messi")
+dotacionL.append("Lungo")
+dotacionL.append("Vazquez")
+dotacionL.append("Lopez")
+dotacionL.append("Gimenez")
 
-incidente1= Incidentes("Pozo Verde","Accidente vehicular","Juanita Perez",dotacionL,"15/9/2022","11:53","15/9/2022","13:02",rodado1,"Fractura del femur, Vidrios rotos","12:00","11:50")
+incidente1= Incidentes(" incidente en el Pozo Verde"," hubo un Accidente vehicular","Juanita Perez muere no te lo vas a creer",dotacionL,"15/9/2022","11:53","15/9/2022","13:02",rodado1,"Fractura del femur, Vidrios rotos","12:00","11:50")
 print(incidente1)
