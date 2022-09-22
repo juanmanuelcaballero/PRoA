@@ -22,9 +22,10 @@ class bomberos(persona):
         self.nombreusuario = nombreusuario
         self.contrasenia = contrasenia
     def iniciarsesion(self):
-        pass
+        tr= input("ingrese nombre de usuario: ")
+        rt= input("ingrese su contrasenia: ")
     def cargardatos(self):
-        pass
+        
     def editardatos(self):
         pass
     def verdatos(self):
