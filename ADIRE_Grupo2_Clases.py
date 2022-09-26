@@ -114,22 +114,21 @@ else:
     print("vehiculo 3", nombre3.patente, nombre3.fechavencimiento, nombre3.numeropoliza, nombre3.seguro)
 
 print("¿Desea ingresar una dotacion?")
-a= input()
-if a == "si" or "Si" or "SI":
+abn= input()
+if abn == "si" or "Si" or "SI":
     print("Ingrese los datos de dotacion")
     d1 = input("Nombre/identificacion de la dotacion")
     d2 = input("Nombre de bomberos: ")
     d3 = input("Apellido: ")
     d4 = input("Cargos: ")
-    d4_5 = input("Motico")
+    d4_5 = input("Motio")
     d5 = input("Movil: ")
     d5_5 = input("Ubicacion")
     d6 = input("Fecha de salida: ")
     d7 = input("Fecha de llegada: ")
     d8 = input("Hora de salida: ")
     d9 = input("Hora de llegada: ")
-    
     print ("La dotacion", d1, "salió a las", d8, "del dia", d6, "a", d5_5, "por un ", d4_5, "llegando a la ubicacion a las", d9, "del", d7)
-
-elif a == "no" or "No" or "NO": 
+    
+elif abn == "no" or "No" or "NO": 
     print("OK.")
