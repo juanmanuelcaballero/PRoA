@@ -1,5 +1,5 @@
 class personas:
-    def __init__(self, nombre,apellido, direccion, fecha_de_nacimiento, DNI, numero_de_telefono, ID, gmail):
+    def __init__(self, nombre,apellido, direccion, fecha_de_nacimiento, DNI, numero_de_telefono, ID, gmail,rango_cargo, cuartel, usuario, contraseña):
         self.nombre = nombre
         self.apellido =apellido
         self.direccion=direccion
@@ -8,10 +8,6 @@ class personas:
         self.numero_de_telefono=numero_de_telefono
         self.ID=ID
         self.gmail=gmail
-    
-
-class bombero:
-    def __init__(self, rango_cargo, cuartel, usuario, contraseña):
         self.rango_cargo=rango_cargo
         self.cuartel=cuartel
         self.usuario=usuario
@@ -42,6 +38,31 @@ class bombero:
         print("ver registro economico")
     def modificar_datos_personales(self):
         print("modificar datos personales")
+persona1=("carla","lopez","los manantiales","2_10_2006","46716890","354678659","11.11.12","lopezcarla@gmail.com","cadete","la cumbrecita","carlafernandez","tu casita sabrosa")
+print("Ingrese una persona:")
+persona2=("Micaela", "Rapisarda","Las verbenas","03_03_2003","46578987","6543262839","11.11.15","Micarapisarda@gmail.com","cadete","Villa General Belgrano","MicaelaRapisarda","mica1234")
+persona3=("Ana","Fernandez", "los manantiales","2_6_2006","46543234","2567985436","11.11.16","anafernandez@gmail.com","cadete", "Villa Ciudad Parque","AnaFernandez", "ana1234")
+persona4=("gabriel","lazarte","julio A. roca", "4_7_2002","46765345","4567989898","11.11.17","gabriellazarte@gmail.com","cadete","la cumbrecita","gabriellazarte","gabriel123")
+persona5=("celeste","andrada","los molinos","2_5_1999","56543234","7878787878","11.11.18","celesteandrada@gmail.com","cadete", "la cumbrecita","celesteandrada","celeste123456")
+persona6=("Lucila","petillo","los manantiales","8_9_1999","46578876","5656565656","11.11.19","lucilapetillo@gmail.com","cadete","villa general belgrano", "lucilapetillo","lucila1234")
+persona7=("mirena","torres","las verbenas","4_8_1990","46578875","4656475656","11.11.20","mirenatorres@gmail.com","cadete","villa cuidada parque","mirenatorres","mirena1234")
+persona8=("carmen","felipe","las verbenas","8_9_2000","56686767","4567454545","11.11.21","carmenfelipe@gmail.com","cadete","villa general belgrano","carmenfelipe","carmen1234")
+persona9=("martina","praniuk","la cumbrecita","3_7_2000","56567567","5656565656","1.11.21","martinapraniuk@gmail.com","cadete","villa cuidad parque","martinapraniuk","martina1234")
+persona10=("virginia","lopez","las verbenas","3_6_2000","46756456","4567767676","11.33.55","virginialopez@gmail.com","cadete","villa general belgrano","virginialopez","virginia234")
+a = input("Nombre: ")
+b = input("Apellido: ")
+c = input("direccion")
+d = input("Fecha de nacimento: ")
+e = input("DNI: ")
+f = input("Numero de telefono: ")
+g = input("ID: ")
+h = input ("gmail: ")
+i = input("Cargo: ")
+j = input("Cuartel: ")
+k = input("Nombre de usuario: ")
+l = input("Contraseña: ")
+persona2 = (a,b,c,d,e,f,g,h,i,j,k,l)
+print(persona2)
 class incidente:
     def __init__(self, ubicacion_del_incidente, tipo, damnificado, dotacion, fecha_de_salida, hora_de_salida, fecha_de_retorno, hora_de_retorno, datos_del_informante, moviles, daños, hora_del_incidente, hora_de_llegada, hora_de_llegada_de_la_dotacion_al_lugar_del_incidente):
         self.ubicacion_del_incidente=ubicacion_del_incidente
@@ -55,13 +76,19 @@ class incidente:
         self.hora_de_llegada_de_la_dotacion_al_lugar_del_incidente=hora_de_llegada_de_la_dotacion_al_lugar_del_incidente
 
 class rodado:
-    def __init__(self,patente, seguro, numero_de_poliza, fecha_de_nacimiento, tipo, estado):
+    def __init__(self,patente, seguro, numero_de_poliza, fecha_de_vencimiento, tipo, estado):
         self.patente=patente
         self.seguro=seguro
         self:numero_de_poliza=numero_de_poliza
-        self.fecha_de_nacimiento=fecha_de_nacimiento
+        self.fecha_de_vencimiento=fecha_de_vencimiento
         self.tipo=tipo
         self.estado=estado
+rodado1=("123abc","SOS","000001","2050","autobomba","nuevo")
+print("")
+rodado2=("321cba","SOS","000002","2050","camionforestal","nuevo")
+print("")
+rodado3=("454ava","SOS","000003","2050","autoescala","nuevo")
+print("")
 
 class registros_economicos:
     def __init__(self,ingresos,egresos,fecha,motivo_de_ingreso,motivo_de_egreso,numero_de_factura):
