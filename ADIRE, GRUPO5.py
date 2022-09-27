@@ -1,3 +1,6 @@
+from xml.dom.minidom import DOMImplementation
+
+
 class Bomberos:
     def __init__(self, nombre, apellido, DNI, fecha_de_nacimiento, ID, rol, numero_de_telefono, gmail, direccion, cargo, cuartel, usuario, contrasenia):
         self.nombre = nombre
@@ -71,6 +74,9 @@ class Incidentes:
         self.danios = danios
         self.hora_de_llegada_al_accidente = hora_de_llegada_al_accidente
         self.hora_de_incidente = hora_de_incidente
+    def __str__(self):
+        return f"{self.lugar} {self.tipo} {self.damnificados} {self.dotacion} {self.fecha_salida} {self.hora_salida} {self.fecha_retorno} {self.hora_retorno} {self.moviles} {self.danios} {self.hora_de_llegada_al_accidente} {self.hora_de_incidente}"
+
 
 class Rodados:
     def __init__(self, patente, seguro, numero_de_poliza, fechavencimiento):
@@ -96,11 +102,7 @@ print (persona9)
 print (persona10)
 
 
-#creo lista
 l=[]
-
-
-#asigno valores a las variables
 print("-------")
 print("-------")
 print("-------")
@@ -109,6 +111,7 @@ nombre=input("Nombre:")
 apellido=input("Apellido:")
 DNI=int(input("DNI: "))
 fechanacimiento=input("Fecha de nacimiento: ")
+
 ID=int(input("ID: "))
 rol=input("Rol: ")
 numtelefono=int(input("Numero de telefono: "))
@@ -118,9 +121,6 @@ cargo=input("Cargo:")
 cuartel=input("Cuartel: ")
 usuario=input("Usuario: ")
 contrasenia=input("Contraseña: ")
-
-
-#ingreso las variables a la lista
 l.append(nombre)
 l.append(apellido)
 l.append(DNI)
@@ -134,11 +134,36 @@ l.append(cargo)
 l.append(cuartel)
 l.append(usuario)
 l.append(contrasenia)
-
-#imprimo la lista ysi
 print(l)
 
 #ignoren esto, solo lo puse porque quiero preguntar si esta bien o es cualquier verdura lol
 #l2= []
 #l2.append(Bomberos("Leonel", "Messi", 46722652, "18/8/1982", 12345, "cabo", 455672, "messileonelAgmail.com", "islas malvinas 23", "sub jefe", "31/7", "lmessi", "Argentina2019"))
 #print(l2)
+
+lr=[]
+print("-------")
+print("-------")
+print("-------")
+print("Ingrese los siguientes datos: ")
+patente=input("Patente:")
+seguro=input("Seguro:")
+fechaVencimiento=input("Fecha de vencimiento: ")
+numPoliza=int(input("Numero de poliza: "))
+lr.append(patente)
+lr.append(seguro)
+lr.append(fechaVencimiento)
+lr.append(numPoliza)
+print(lr)
+
+
+
+dotacionL =[]
+dotacionL.append(persona1)
+dotacionL.append(persona3)
+dotacionL.append(persona9)
+dotacionL.append(persona5)
+dotacionL.append(persona7)
+
+incidente1= Incidentes("Pozo Verde","Accidente vehicular","Juanita Perez",dotacionL,"15/9/2022","11:53","15/9/2022","13:02",rodado1,"Fractura del femur, Vidrios rotos","12:00","11:50")
+print(incidente1)
