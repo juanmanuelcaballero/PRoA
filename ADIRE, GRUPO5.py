@@ -58,6 +58,38 @@ persona8= Bomberos("Gombal", "Waterson", 33322652, "24/8/1999", 89123, "cabo", 5
 persona9= Bomberos("Arturo", "Vasquez", 44422652, "30/2/1898", 91234, "cabo", 765672, "arvasquezAgmail.com", "Jujuy 69", "bombero", "31/7", "avasquez", "Argentina2019")
 persona10= Bomberos("Josefo", "Perez", 55522652, "24/6/2006", 94563, "cadete", 876672, "josefoAgmail.com", "islas malvinas 18", "bombero", "31/7", "jperez", "Argentina2019")
 
+Lbomberos=[persona1,persona2,persona3,persona4]
+for i in Lbomberos:
+    print("i qsy matenme joda")
+
+
+#print("Bomberos en servicio: ")
+#print (persona1)
+#print (persona2)
+#print (persona3)
+#print (persona4)
+#print (persona5)
+#print (persona6)
+#print (persona7)
+#print (persona8)
+#print (persona9)
+#print (persona10)
+
+
+class Rodados:
+    def __init__(self, patente, seguro, numeroPoliza, fechaVencimiento):
+        self.patente = patente
+        self.seguro = seguro
+        self.numeroPoliza = numeroPoliza
+        self.fechaVencimiento = fechaVencimiento
+    def __str__(self):
+        return f"{self.patente} {self.seguro} {self.numeroPoliza} {self.fechaVencimiento}"
+
+rodado1= Rodados("jrl 354", "sancor", 54769875, "17/4/2023")
+rodado2= Rodados("lor 999", "sancor", 65432875, "17/4/2023")
+rodado1= Rodados("sqm 654", "sancor", 54769567, "17/4/2023")
+
+#print(rodado1)
 
 
 class Incidentes:
@@ -78,43 +110,30 @@ class Incidentes:
         return f"{self.lugar} {self.tipo} {self.damnificados} {self.dotacion} {self.fecha_salida} {self.hora_salida} {self.fecha_retorno} {self.hora_retorno} {self.moviles} {self.danios} {self.hora_de_llegada_al_accidente} {self.hora_de_incidente}"
 
 
-class Rodados:
-    def __init__(self, patente, seguro, numeroPoliza, fechaVencimiento):
-        self.patente = patente
-        self.seguro = seguro
-        self.numeroPoliza = numeroPoliza
-        self.fechaVencimiento = fechaVencimiento
-    def __str__(self):
-        return f"{self.patente} {self.seguro} {self.numeroPoliza} {self.fechaVencimiento}"
+dotacionL =[]
+dotacionL.append("La dotacion que acudió al incidente fue conformada por los bomberos: ")
+dotacionL.append("Messi")
+dotacionL.append("Lungo")
+dotacionL.append("Vazquez")
+dotacionL.append("Lopez")
+dotacionL.append("Gimenez")
 
-rodado1= Rodados("jrl 354", "sancor", 54769875, "17/4/2023")
-rodado2= Rodados("lor 999", "sancor", 65432875, "17/4/2023")
-rodado1= Rodados("sqm 654", "sancor", 54769567, "17/4/2023")
+incidente1= Incidentes(" Incidente en el Pozo Verde\n","Hubo un Accidente vehicular\n","Juanita Perez muere no te lo vas a creer\n",dotacionL,"15/9/2022\n","11:53\n","15/9/2022\n","13:02\n",rodado1, "Fractura del femur, Vidrios rotos\n","12:00\n","11:50\n")
+print(incidente1)
 
-
-print (persona1)
-print (persona2)
-print (persona3)
-print (persona4)
-print (persona5)
-print (persona6)
-print (persona7)
-print (persona8)
-print (persona9)
-print (persona10)
-
-print(rodado1)
-
+print("-------")
+print("-------")
+print("-------")
+print("Cargar datos:")
 l=[]
 print("-------")
 print("-------")
 print("-------")
-print("Ingrese los siguientes datos: ")
+print("Ingrese los siguientes datos para ingresar un nuevo bombero al sistema: ")
 nombre=input("Nombre:")
 apellido=input("Apellido:")
 DNI=int(input("DNI: "))
 fechanacimiento=input("Fecha de nacimiento: ")
-
 ID=int(input("ID: "))
 rol=input("Rol: ")
 numtelefono=int(input("Numero de telefono: "))
@@ -139,16 +158,13 @@ l.append(usuario)
 l.append(contrasenia)
 print(l)
 
-#ignoren esto, solo lo puse porque quiero preguntar si esta bien o es cualquier verdura lol
-#l2= []
-#l2.append(Bomberos("Leonel", "Messi", 46722652, "18/8/1982", 12345, "cabo", 455672, "messileonelAgmail.com", "islas malvinas 23", "sub jefe", "31/7", "lmessi", "Argentina2019"))
-#print(l2)
+
 
 lr=[]
 print("-------")
 print("-------")
 print("-------")
-print("Ingrese los siguientes datos: ")
+print("Ingrese los siguientes datos para ingresar un nuevo rodado al sistema: ")
 patente=input("Patente:")
 seguro=input("Seguro:")
 fechaVencimiento=input("Fecha de vencimiento: ")
@@ -161,13 +177,3 @@ print(lr)
 
 
 
-dotacionL =[]
-dotacionL.append("La dotacion que acudió al incidente fue conformada por los bomberos: ")
-dotacionL.append("Messi")
-dotacionL.append("Lungo")
-dotacionL.append("Vazquez")
-dotacionL.append("Lopez")
-dotacionL.append("Gimenez")
-
-incidente1= Incidentes(" incidente en el Pozo Verde"," hubo un Accidente vehicular","Juanita Perez muere no te lo vas a creer",dotacionL,"15/9/2022","11:53","15/9/2022","13:02",rodado1,"Fractura del femur, Vidrios rotos","12:00","11:50")
-print(incidente1)
