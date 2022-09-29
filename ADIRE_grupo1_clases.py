@@ -38,7 +38,7 @@ class personas:
         print("ver registro economico")
     def modificar_datos_personales(self):
         print("modificar datos personales")
-persona1=("carla","lopez","los manantiales","2_10_2006","46716890","354678659","11.11.12","lopezcarla@gmail.com","cadete","la cumbrecita","carlafernandez","tu casita sabrosa")
+persona1=("carla","lopez","los manantiales","2_10_2006","46716890","354678659","11.11.12","lopezcarla@gmail.com","cadete","la cumbrecita","carlafernandez","tu casita sabrosa" )
 print("Ingrese una persona:")
 persona2=("Micaela", "Rapisarda","Las verbenas","03_03_2003","46578987","6543262839","11.11.15","Micarapisarda@gmail.com","cadete","Villa General Belgrano","MicaelaRapisarda","mica1234")
 persona3=("Ana","Fernandez", "los manantiales","2_6_2006","46543234","2567985436","11.11.16","anafernandez@gmail.com","cadete", "Villa Ciudad Parque","AnaFernandez", "ana1234")
@@ -49,6 +49,8 @@ persona7=("mirena","torres","las verbenas","4_8_1990","46578875","4656475656","1
 persona8=("carmen","felipe","las verbenas","8_9_2000","56686767","4567454545","11.11.21","carmenfelipe@gmail.com","cadete","villa general belgrano","carmenfelipe","carmen1234")
 persona9=("martina","praniuk","la cumbrecita","3_7_2000","56567567","5656565656","1.11.21","martinapraniuk@gmail.com","cadete","villa cuidad parque","martinapraniuk","martina1234")
 persona10=("virginia","lopez","las verbenas","3_6_2000","46756456","4567767676","11.33.55","virginialopez@gmail.com","cadete","villa general belgrano","virginialopez","virginia234")
+def __str__ (self):
+    return f" {self.nombre} {apellido} vive en: {self.direccion} nacio: {self.fecha_de_nacimiento} su DNI es: {self.DNI} su numero de telefono es: {self.numero_de_telefono} su direccion ID: {self.ID} su mail es: {self.gmail} su cargo es: {self.rango_cargo} pertenece al cuartel: {self.cuartel} nombre de usuario: {self.usuario} contraseña: NO VICIBLE"      
 a = input("Nombre: ")
 b = input("Apellido: ")
 c = input("direccion")
@@ -56,7 +58,7 @@ d = input("Fecha de nacimento: ")
 e = input("DNI: ")
 f = input("Numero de telefono: ")
 g = input("ID: ")
-h = input ("gmail: ")
+h = input("gmail: ")
 i = input("Cargo: ")
 j = input("Cuartel: ")
 k = input("Nombre de usuario: ")
@@ -64,9 +66,9 @@ l = input("Contraseña: ")
 persona2 = (a,b,c,d,e,f,g,h,i,j,k,l)
 print(persona2)
 class incidente:
-    def __init__(self, ubicacion_del_incidente, tipo, damnificado, dotacion, fecha_de_salida, hora_de_salida, fecha_de_retorno, hora_de_retorno, datos_del_informante, moviles, daños, hora_del_incidente, hora_de_llegada, hora_de_llegada_de_la_dotacion_al_lugar_del_incidente):
+    def __init__(self, ubicacion_del_incidente, tipo_de_incidente, damnificado, dotacion, fecha_de_salida, hora_de_salida, fecha_de_retorno, hora_de_retorno, datos_del_informante, moviles, daños, hora_del_incidente, hora_de_llegada, hora_de_llegada_de_la_dotacion_al_lugar_del_incidente):
         self.ubicacion_del_incidente=ubicacion_del_incidente
-        self.tipo=tipo
+        self.tipo_de_incidente=tipo_de_incidente
         self.damnificado=damnificado
         self.dotacion=dotacion
         self.fecha_de_salida=fecha_de_salida
@@ -74,7 +76,17 @@ class incidente:
         self.fecha_de_retorno=fecha_de_retorno
         self.hora_de_retorno=hora_de_retorno
         self.hora_de_llegada_de_la_dotacion_al_lugar_del_incidente=hora_de_llegada_de_la_dotacion_al_lugar_del_incidente
-
+a = input("Ubicacion del incidente: ")
+b = input("Tipo de incidente: ")
+c = input("Damnificado: ")
+d = input("Dotacion: ")
+e = input("Fecha de salida: ")
+f = input("Hora de salida: ")
+g = input("Fecha de retorno: ")
+h = input("Hora de retorno: ")
+i = input("Hora de llegada de la dotacion al lugar del incidente: ")
+incidente1 = (a,b,c,d,e,f,g,h,i)
+print(incidente1)
 class rodado:
     def __init__(self,patente, seguro, numero_de_poliza, fecha_de_vencimiento, tipo, estado):
         self.patente=patente
