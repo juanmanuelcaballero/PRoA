@@ -1,3 +1,14 @@
+#Login y Registro de usuarios
+
+a = input("Ingrese usuario: ")
+b = input("Ingrese contraseña: ")
+if len(a) > 10:
+    print("Usuario no valido")
+if len(b)< 5:
+    print("La contraseña debe contener mas de 5 caracteres")
+
+  #------------------------------------------------------
+  #Se definen clases
 class personal:
     def __init__(self, cargo, cuartel, servicio, nombreusuario, contrasena, nombre, apellido, dni, fnacimiento, ID, numtelefono, gmail, domicilio):
         self.cargo = cargo
@@ -9,37 +20,10 @@ class personal:
         self.apellido = apellido
         self.dni = dni 
         self.fnacimiento = fnacimiento #muy buen trabajo
-        self.ID = ID 
+        self.IDE =  ID
         self.numtelefono = numtelefono
         self.gmail = gmail
         self.domicilio = domicilio
-
-    def iniciarsesion(self):
-        pass
-    def cargardatos(self):
-        pass
-    def editardatos(self):
-        pass
-    def verdatos(self):
-        pass 
-    def cargararticulos(self):
-        pass 
-    def verarticulos(self):
-        pass 
-    def modificararticulos(self):
-        pass 
-    def cargarrodados(self):
-        pass 
-    def modificarrodados(self):
-        pass 
-    def verrodados(self):
-        pass 
-    def cargarregistroeconomico(self):
-        pass 
-    def modificarregistroeconomico(self):
-        pass 
-    def verregistroeconomico(self):
-        pass 
     def editarcuenta(self):
         pass 
         
@@ -93,6 +77,9 @@ class registros_economicos:
         self.motivoegreso = motivoegreso
         self.nfactura = nfactura
 
+#------------------------------------------------------
+#Ver rodados o personal
+
 dotacion = [personal, rodados, incidente]
 print("Que archivos quieres ver? Opcion 1: Persona, Opcion 2: rodados")
 opcion = float(input())
@@ -113,23 +100,67 @@ else:
     print("vehiculo 2", nombre2.patente, nombre2.fechavencimiento, nombre2.numeropoliza, nombre2.seguro)
     print("vehiculo 3", nombre3.patente, nombre3.fechavencimiento, nombre3.numeropoliza, nombre3.seguro)
 
-print("¿Desea ingresar una dotacion?")
-a= input()
-if a == "si" or "Si" or "SI":
-    print("Ingrese los datos de dotacion")
-    d1 = input("Nombre/identificacion de la dotacion")
-    d2 = input("Nombre de bomberos: ")
-    d3 = input("Apellido: ")
-    d4 = input("Cargos: ")
-    d4_5 = input("Motico")
-    d5 = input("Movil: ")
-    d5_5 = input("Ubicacion")
-    d6 = input("Fecha de salida: ")
-    d7 = input("Fecha de llegada: ")
-    d8 = input("Hora de salida: ")
-    d9 = input("Hora de llegada: ")
-    
-    print ("La dotacion", d1, "salió a las", d8, "del dia", d6, "a", d5_5, "por un ", d4_5, "llegando a la ubicacion a las", d9, "del", d7)
 
-elif a == "no" or "No" or "NO": 
+#------------------------------------------------------
+#Ingresar dotacion
+
+print("¿Desea ingresar una dotacion? Si o No")
+a= input()
+if a == "Si":
+    print("Ingrese los datos de dotacion: ")
+    nombredota = input("Nombre/identificacion de la dotacion: ")
+    nombrebomberodota = input("Nombre de bomberos: ")
+    cargodota = input("Cargos: ")
+    motivodota = input("Motivo: ")
+    movildota = input("Movil: ")
+    ubicacionesdota = input("Ubicacion")
+    fechasalidadota = input("Fecha de salida: ")
+    fechallegadadota = input("Fecha de llegada: ")
+    horasalidadota = input("Hora de salida: ")
+    horallegadadota = input("Hora de llegada: ")
+    
+    print ("La dotacion", nombredota, "compuesta por", movildota, "a cargo de los bomberos", nombrebomberodota, "salió a las", horasalidadota, "el dia", fechasalidadota, "a", ubicacionesdota, "por un ", motivodota, "llegando a la ubicacion a las", horallegadadota, "del", fechallegadadota)
+
+elif a == "No": 
+    print("OK.")
+
+
+#------------------------------------------------------
+
+#Ingresar Incidentes
+print("¿Desea ingresar un incidente? Si o No: ")
+b=input()
+if b == "Si":
+    print("Ingrese los datos del incidente: ")
+    tipoincidente=input("Ingrese tipo del incidente: ")
+    fechaincidente= input("Ingrese fecha: ")
+    b2=input("¿Desea ingresar daños a la propiedad? Si o No: ")
+    if b2 == "Si":
+        superficieincidente=input ("Superficie afectada: ")
+        combustibleincidente=input("Tipo de combustible: ")
+        p3=input("Pérdida de vivienda: ")
+        p3_1= input("Tipo de vivienda: ")
+        p4=input("Pérdida de animales: ")
+        p4_1=input("Tipo de animales: ")
+
+        print("El tipo de incidente es:", tipoincidente, "el dia:", fechaincidente, ", la superficie afectada fue:", superficieincidente, ", el tipo de combustible fue:", combustibleincidente,",", p3_1, "fue afectada:", "los animales afectados fueron: ", p4_1)
+    elif b2 == "No":
+        print("Ok.")
+    
+elif b == "No": 
+    print("OK.")
+
+#------------------------------------------------------
+    #Ingresar Rodados
+    print("¿Desea ingresar un rodado? Si o No")
+b=input()
+if b == "Si":
+    print("Ingrese los datos de los rodados: ")
+    a0=input("Ingrese nombre del rodado: ")
+    a1= input("Ingrese patente: ")
+    a2=input("Ingrese seguro: ")
+    a3=input("Ingrese numero de poliza: ")
+    a4=input("Ingrese la fecha de vencimiento de poliza: ")
+    print("El rodado", a0, "de patente", a1, "con el seguro", a2, "y numero de poliza", a3, "vence el", a4)
+elif b == "No": 
     print("OK.")
