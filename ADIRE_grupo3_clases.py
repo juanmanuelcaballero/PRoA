@@ -98,18 +98,34 @@ sdfgh = input("Ingrese1 para iniciar sesion 2 para registrarse: ")
 
 if sdfgh == "1":
     usuario = input("Usuario: ")
-    contraseña = input("Contraseña: ")
+    contraseña = input("Contraseña: \n")
 
 elif sdfgh == "2":
     Mail = input("Mail: ")
     Usuario = input("Nombre de usuario: ")
-    Contraseña = input("Contraseña: ")
+    Contraseña = input("Contraseña: \n")
 
 else:
     print("Numero incorrecto")
 
+print("ingrese un incidente ")
+vasd=input("lugar: ")
+wasd=input("tipo: ")
+hasd=input("damnificado: ")
+pasd=input("dotacion: ")
+kasd=input("fecha de salida: ")
+yasd=input("hora de incidente:  ")
+qasd=input("hora de salida: ")
+xasd=input("moviles: ")
+zasd=input("fecha de retorno: ")
+fasd=input("daños: ")
+masd=input("hora  llegada dotacion: ")
+lista43=[vasd, wasd, hasd, pasd, kasd, yasd, qasd, xasd, zasd, fasd, masd]
+print(lista43 ,"\n")
 
-x = input("Ingrese 1 si es persona y 2 si es vehículo 3 para dotacion: ")
+
+
+x = input("Ingrese 1 si es persona, 2 si es vehículo o 3 para dotacion: ")
 
 
 
@@ -148,3 +164,5 @@ elif x == "3":
     
 else:
     print("Número incorrecto")
+
+
