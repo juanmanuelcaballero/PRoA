@@ -2,6 +2,9 @@
 from kivy.lang import Builder
 from kivy.uix.button import Button
 from kivy.uix.screenmanager import ScreenManager, Screen"""
+from re import T
+
+
 class personal:
     def __init__ (self, nombre, apellido, dni, fnacimiento, ID, numtelefono, gmail, domicilio, rol):
         self.nombre = nombre
@@ -131,11 +134,12 @@ bomberoslista=[a,b,c,d,e,f,g,h,i,j]
 R1 = rodados("RPF-321","Rivadavia","12345678", "5-3-2025", "Vacío")
 R2 = rodados("PIF-430","Greenday","87654321", "18-1-2021", "Vacío" )
 R3 = rodados("JCJ-232","Sancor","45687312", "29-12-2028", "Vacío" )
+rodadoslista=[R1,R2,R3]
 
 
 valor2=input("¿que quieres persona(1) o rodado(2)? ")
 if valor2 == "1":
-    print("""Ingrese los sisuientes datos:
+    print("""Ingrese los siguientes datos:
     Nombre
     Apellido
     DNI
@@ -146,10 +150,11 @@ if valor2 == "1":
     Domicilio
     Rango""")
     vari2= []
-    for persona in range (9):
+    for persona in range (0,8):
         jfdjfjk= input()
         vari2.append(jfdjfjk)
     ae=personal(vari2[0],vari2[1],vari2[2],vari2[3],vari2[4],vari2[5],vari2[6],vari2[7],vari2[8])
+    bomberoslista.append(ae)
 else:
     print("""Ingrese los siguientes datos:
     Patente
@@ -162,53 +167,105 @@ else:
         hdifej=input()
         vari.append(hdifej)
     aed=rodados(vari[0],vari[1],vari[2],vari[3],vari[4])
+    rodadoslista.append(aed)
+print("Bomberos:")
+for i in bomberoslista:
+    i.imprimir()
+print("")
+print("Rodados:")
+for i in rodadoslista:
+    i.imprimir()
 
-a.imprimir()
-b.imprimir()
-c.imprimir()
-d.imprimir()
-e.imprimir()
-f.imprimir()
-g.imprimir()
-h.imprimir()
-i.imprimir()
-j.imprimir()
-try:
-    ae.imprimir()
-except:
-    pass
-R1.imprimir()
-R2.imprimir()
-R3.imprimir()
-try:
-    aed.imprimir()
-except:
-    pass
+
+
+datosincidente= []
+uwu=input("Ingrese fecha del incidente: ")
+print("""Ingrese dastos del informante:
+nOMBRE
+DNI
+Teléfono""")
+datosinformante=[]
+for ww in range(2):
+    lol=input()
+    datosinformante.append(lol)
+datosincidente.append(datosinformante)
+direcciondelsieniestro = []
+print("""ingrese datos del siniestro: 
+Paraje
+Departamento
+Provincia
+Calle
+Numero""")
+for ww in range (4):
+    vaiable = input()
+    direcciondelsieniestro.append(vaiable)
+datosinformante.append(direcciondelsieniestro)
+ra=input("Ingrese quien recibio el llamado: ")
+isis=input("Ingrese quien autorizo la dotacion: ")
+print("""Ingrese datos del damnificado:
+Titular
+DNI
+Edad
+Teléfono
+Nombre de establecimiento
+DNI del responsable""")
+datosdeldam=[]
+for ww in range(5):
+    jjj=input()
+    datosdeldam.append(jjj)
+datosincidente.append(datosdeldam)
+danosalapropiedad = []
+vari3 = input("Ingrese la superficie afectada: ")
+danosalapropiedad.append(vari3)
+vari4 = input("Ingrese los tipos de cobustibles utilizados separados por comas: ")
+vari5 = input("Ingrese si hubo cercos afectados(1/0): ")
+vari6 = input("Ingrese si hubo postes afectados (1/0): ")
+vari7 = input("Ingrese partes de viviendas perdidas, separadas por comas: ")
+vari8 = input("Ingrese tipos de animales afectados, separados por comas: ")
+vari9 = input("Ingrese si hubo herramientas perdidas (1/0): ")
+vari10 = input("Ingrese si hubo vehiculos perdidos (1/0): ")
+danosalapropiedad.append(vari4)
+danosalapropiedad.append(vari5)
+danosalapropiedad.append(vari6)
+danosalapropiedad.append(vari7)
+danosalapropiedad.append(vari8)
+danosalapropiedad.append(vari9)
+danosalapropiedad.append(vari10)
+datosinformante.append(danosalapropiedad)
+vari11= input ("Ingrese numero de dotacion: ")
+vari12= input ("Ingrese jefe de dotacion(DNI): ")
+vari13= input ("Ingrese fecha de salida: ")
+vari14= input ("Ingrese hora de salida: ")
 hh=[]
 X=True
+existe1 = True
 while X==True:
     print("Ingrese DNI de bomberos para dotación: ")
     DNIdotacion = input()
     try:
         DNIdotacion=int(DNIdotacion)
-        hh.append(DNIdotacion)
     except:
-        X=False
         break
-
-#for b in bomberoslista:
- #           for i in hh:
-        #        if b.dni == i:
-         #           break
-          #      else:
-           #         print("El bombero que llamó no está registrado")                                                      
-
-for q in bomberoslista:
-    if q.dni == DNIdotacion:
-        break
+    for q in bomberoslista:
+        if q.dni == DNIdotacion:
+            break
+        else:
+            existe1 = False
+    if existe1 == False:
+        print("Ese bombero no existe")
     else:
-        print("El bombero que ingresó no existe")
-        break                               
-
-
-    
+        hh.append(DNIdotacion)
+        print("Bombero agregado")
+vari15= input ("Ingrese el equipo utilizado: ")
+vari16 = input ("Ingrese la fecha de retorno: ")
+vari17 = input ("Ingrese hora de retorno: ")
+dotacion= []
+dotacion.append(vari11)
+dotacion.append(vari12)
+dotacion.append(vari13)
+dotacion.append(vari14)
+dotacion.append(hh)
+dotacion.append(vari15)
+dotacion.append(vari16)
+dotacion.append(vari17)
+datosinformante.append(dotacion)
