@@ -5,6 +5,7 @@ class persona:
         self.DNI=DNI
         self.fecha_de_nacimiento
         self.ID=ID
+
 class bombero(persona):
     def __init__(self,cargo,cuartel,usuario,contraseña, mail, telefono):
         super(persona)
@@ -56,16 +57,19 @@ class Incidentes:
         self.hora_de_retorno = hora_de_retorno
         self.daños = daños
         self.hora_llegada_dotacion = hora_llegada_dotacion
+
 class articulos:
     def __init__(self,tipo,estado):
         self.tipo= tipo
         self.estado = estado
+
 class rodados(articulos):
     def __init__(self,patente,numero_de_piliza,seguro,fecha_de_vencimiento):
         self.patente= patente
         self.numero_de_poliza= numero_de_poliza
         self.seguro= seguro
         self.fechadevencimieto= fecha_de_vencimineto
+
 class registros_economicos:
     def __init__(self,ingresos,egresos,numero_factura,fecha,motivo_de_ingreso,motivo_de_egreso):
         self.ingresos=ingresos
@@ -86,83 +90,77 @@ persona8 = ("Enrique","Peter", 26789123, "13/4/1999", 8, "aguatero", "Cordoba", 
 persona9 = ("Agustin","guzaman", 23456789, "9/5/2000", 9, "coronelII", "Santa Cruz", "Agus", "AguateBokita", "Aguselpicante@bomberos.com.ar", 987543299)
 persona10 = ("Agostina","Pate", 45671235, "25/12/1999", 10, "Aguatero Suplente", "Mendoza", "Aguitarefrescante", "refrecanteaguita", "aguaaaaa@bomberos.com.ar", 2345671234)
 
-
 vehiculo1 = ("123fgh","12/2024", 12345678,"san cristobal seguros")
 vehiculo2 = ("845ibe", "01/2027", 65815432, "san cristobal seguros")
 vehiculo3 = ("945tds", "08/2031", 53987123, "san cristobal seguros")
 
 
+inicioSesion = input("Ingrese 1 para iniciar sesión y 2 para registrarse: ")
 
-
-sdfgh = input("Ingrese1 para iniciar sesion 2 para registrarse: ")
-
-if sdfgh == "1":
+if inicioSesion == "1":
     usuario = input("Usuario: ")
     contraseña = input("Contraseña: \n")
 
-elif sdfgh == "2":
-    Mail = input("Mail: ")
-    Usuario = input("Nombre de usuario: ")
-    Contraseña = input("Contraseña: \n")
+elif inicioSesion == "2":
+    mail = input("Mail: ")
+    usuario = input("Nombre de usuario: ")
+    contraseña = input("Contraseña: \n")
 
 else:
     print("Numero incorrecto")
 
-print("ingrese un incidente ")
-vasd=input("lugar: ")
-wasd=input("tipo: ")
-hasd=input("damnificado: ")
-pasd=input("dotacion: ")
-kasd=input("fecha de salida: ")
-yasd=input("hora de incidente:  ")
-qasd=input("hora de salida: ")
-xasd=input("moviles: ")
-zasd=input("fecha de retorno: ")
-fasd=input("daños: ")
-masd=input("hora  llegada dotacion: ")
-lista43=[vasd, wasd, hasd, pasd, kasd, yasd, qasd, xasd, zasd, fasd, masd]
-print(lista43 ,"\n")
+print("Ingrese un incidente ")
+lugar = input("Lugar: ")
+tipo = input("Tipo: ")
+damnificado = input("Damnificado: ")
+dotacion = input("Dotación: ")
+fechaSalida = input("Fecha de salida: ")
+horaIncidente = input("Hora de incidente:  ")
+horaSalida = input("Hora de salida: ")
+moviles = input("Móviles: ")
+fechaRetorno = input("Fecha de retorno: ")
+daños = input("Daños: ")
+horaLlegadaDotacion = input("Hora de llegada de la dotación: ")
+
+incidente = [lugar, tipo, damnificado, dotacion, fechaSalida, horaIncidente, horaSalida, moviles, fechaRetorno, daños, horaLlegadaDotacion]
+print(incidente,"\n")
 
 
+ingresos = input("Ingrese 1 si es persona, 2 si es vehículo o 3 para dotación: ")
 
-x = input("Ingrese 1 si es persona, 2 si es vehículo o 3 para dotacion: ")
-
-
-
-if x == "1":
+if ingresos == "1":
     print("Ingrese una persona")
-    z = input("Nombre: ")
-    e = input("Apellido: ")
-    g = input("DNI: ")
-    r = input("Fecha de nacimento: ")
-    u = input("Cargo: ")
-    o = input("Cuartel: ")
-    s = input("Nombre de usuario: ")
-    a = input("Contraseña: ")
-    h = input("Gmail: ")
-    w = input("Numero de telefono: ")
-    lista1=[z,e,g,r,u,o,s,a,h,w,persona1,persona2,persona3,persona4,persona5,persona6,persona7,persona8,persona9,persona10]
-    print(lista1) 
+    nombre = input("Nombre: ")
+    apellido = input("Apellido: ")
+    dni = input("DNI: ")
+    fechaNacimiento = input("Fecha de nacimento: ")
+    cargo = input("Cargo: ")
+    cuartel = input("Cuartel: ")
+    usuario = input("Nombre de usuario: ")
+    contraseña = input("Contraseña: ")
+    gmail = input("Gmail: ")
+    telefono = input("Numero de teléfono: ")
+    mostrarPersonas = [nombre, apellido, dni, fechaNacimiento, cargo, cuartel, usuario, contraseña, gmail, telefono, persona1, persona2, persona3, persona4, persona5, persona6, persona7, persona8, persona9, persona10]
+    print(mostrarPersonas)
 
-elif x == "2":
-    print("Ingrese un vehiculo")
-    y = input("numero de matricula: ")
-    n = input("fecha de vencimiento: ")
-    i = input("numero de poliza: ")
-    k = input("seguro: ")
-    lista2=[y,n,i,k, vehiculo1, vehiculo2, vehiculo3]
-    print(lista2)
+elif ingresos == "2":
+    print("Ingrese un vehículo")
+    matricula = input("Número de matrícula: ")
+    fechaVencimiento = input("Fecha de vencimiento: ")
+    numeroPoliza = input("Número de póliza: ")
+    seguro = input("Seguro: ")
+    mostrarVehiculos = [matricula, fechaVencimiento, numeroPoliza, seguro, vehiculo1, vehiculo2, vehiculo3]
+    print(mostrarVehiculos)
 
-elif x == "3":
-    ff = input("Ingrese nombre: ")
-    ss = input("Ingrese apellido: ")
-    df = input("Ingrese DNI: ")
-    dfg = input("Ingrese direccion: ")
-    sdfg = input("Ingrese ubicacion: ")
-    lista3 = [ff, ss, df, dfg, sdfg]
-    print(lista3)
+elif ingresos == "3":
+    print("Ingrese una dotación")
+    nombre = input("Ingrese nombre: ")
+    apellido = input("Ingrese apellido: ")
+    dni = input("Ingrese DNI: ")
+    direccion = input("Ingrese dirección: ")
+    ubicacion = input("Ingrese ubicación: ")
+    mostrarDotaciones = [nombre, apellido, dni, direccion, ubicacion]
+    print(mostrarDotaciones)
     
 else:
     print("Número incorrecto")
-
-
