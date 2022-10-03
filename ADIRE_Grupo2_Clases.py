@@ -20,7 +20,7 @@ class personal:
         self.apellido = apellido
         self.dni = dni 
         self.fnacimiento = fnacimiento #muy buen trabajo
-        self.IDE =  ID
+        self.ID =  ID
         self.numtelefono = numtelefono
         self.gmail = gmail
         self.domicilio = domicilio
@@ -113,7 +113,7 @@ if a == "Si":
     cargodota = input("Cargos: ")
     motivodota = input("Motivo: ")
     movildota = input("Movil: ")
-    ubicacionesdota = input("Ubicacion")
+    ubicacionesdota = input("Ubicacion: ")
     fechasalidadota = input("Fecha de salida: ")
     fechallegadadota = input("Fecha de llegada: ")
     horasalidadota = input("Hora de salida: ")
@@ -143,7 +143,7 @@ if b == "Si":
         p4=input("Pérdida de animales: ")
         p4_1=input("Tipo de animales: ")
 
-        print("El tipo de incidente es:", tipoincidente, "el dia:", fechaincidente, ", la superficie afectada fue:", superficieincidente, ", el tipo de combustible fue:", combustibleincidente,",", p3_1, "fue afectada:", "los animales afectados fueron: ", p4_1)
+        print("El tipo de incidente es:", tipoincidente, ". Ocurrio el dia ", fechaincidente, ", la superficie que fue afectada es ", superficieincidente, ", el tipo de combustible fue ", combustibleincidente,",", "el daño a la propiedad fue ", p3_1, "los animales afectados fueron: ", p4_1)
     elif b2 == "No":
         print("Ok.")
     
@@ -164,3 +164,26 @@ if b == "Si":
     print("El rodado", a0, "de patente", a1, "con el seguro", a2, "y numero de poliza", a3, "vence el", a4)
 elif b == "No": 
     print("OK.")
+
+#------------------------------------------------------
+#Ingresar Personal
+print("¿Desea ingresar una persona? Si o No")
+j=input()
+if j == "Si":
+    print("Ingrese los datos de la persona: ")
+    nom=input("Ingrese el nombre y apellido: ")
+    dni=input("Ingrese el DNI: ")
+    dom=input("Ingrese el domicilio: ")
+    car=input("Ingrese el cargo: ")
+    cua=input("Ingrese el cuartel: ")
+    ser=input("¿Se encuentra en servicio? ")
+    usua=input("Ingrese el nombre de usuario: ")
+    cont=input("Ingrese la contraseña: ")
+    fna=input("Fecha de nacimiento: ")
+    Id=input("Ingrese el ID: ")
+    numt=input("Ingrese el numero de telefono: ")
+    gm=input("Ingrese el correo: ")
+    print("El", car, nom, "pertenece al cuartel", cua, ser, "se encuentra en servicio.", "Nacio el", fna, ", vive en", dom, ", su DNI es", dni, ", el numero de telefono es", numt, ", el correo electronico es", gm)
+
+elif j == "No":
+    print("Ok.")
