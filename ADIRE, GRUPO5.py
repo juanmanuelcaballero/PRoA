@@ -57,10 +57,10 @@ persona7= Bomberos("Natalia", "Gimenez", 55722697, "28/12/2000", 78912, "cadete"
 persona8= Bomberos("Gombal", "Waterson", 33322652, "24/8/1999", 89123, "cabo", 556672, "gombalwatersonAgmail.com", "islas malvinas 17", "bombero", "31/7", "gwaterson", "Argentina2019")
 persona9= Bomberos("Arturo", "Vasquez", 44422652, "30/2/1898", 91234, "cabo", 765672, "arvasquezAgmail.com", "Jujuy 69", "bombero", "31/7", "avasquez", "Argentina2019")
 persona10= Bomberos("Josefo", "Perez", 55522652, "24/6/2006", 94563, "cadete", 876672, "josefoAgmail.com", "islas malvinas 18", "bombero", "31/7", "jperez", "Argentina2019")
-
+"""
 Lbomberos=[persona1,persona2,persona3,persona4]
 for i in Lbomberos:
-    print("i qsy matenme joda")
+    print("i qsy matenme joda")"""
 
 
 #print("Bomberos en servicio: ")
@@ -110,6 +110,7 @@ class Incidentes:
         return f"{self.lugar} {self.tipo} {self.damnificados} {self.dotacion} {self.fecha_salida} {self.hora_salida} {self.fecha_retorno} {self.hora_retorno} {self.moviles} {self.danios} {self.hora_de_llegada_al_accidente} {self.hora_de_incidente}"
 
 
+
 dotacionL =[]
 dotacionL.append("La dotacion que acudió al incidente fue conformada por los bomberos: ")
 dotacionL.append("Messi")
@@ -118,8 +119,63 @@ dotacionL.append("Vazquez")
 dotacionL.append("Lopez")
 dotacionL.append("Gimenez")
 
-incidente1= Incidentes(" Incidente en el Pozo Verde\n","Hubo un Accidente vehicular\n","Juanita Perez muere no te lo vas a creer\n",dotacionL,"15/9/2022\n","11:53\n","15/9/2022\n","13:02\n",rodado1, "Fractura del femur, Vidrios rotos\n","12:00\n","11:50\n")
-print(incidente1)
+#incidente1= Incidentes(" Incidente en el Pozo Verde\n","Hubo un Accidente vehicular\n","Juanita Perez muere no te lo vas a creer\n",dotacionL,"15/9/2022\n","11:53\n","15/9/2022\n","13:02\n",rodado1, "Fractura del femur, Vidrios rotos\n","12:00\n","11:50\n")
+incidenteL=[]
+
+print ("cargue el incidente")
+lugar =input ("lugar: ")
+tipo = input ("tipo: ")
+damnificados =input ("damnificados: " )
+dotacion=input ("dotacion: " )
+fecha_salida=input ("fecha de salida: " )
+hora_salida=input ("hora de salida: " )
+fecha_retorno=input ("fecha de retono: " )
+hora_retorno=input ("hora de retorno: " )
+moviles=input ("moviles: " )
+danios=input ("danios : " )
+hora_de_llegada_al_incidente=input ("hora de llegada al aciddente: " )
+hora_de_incidente=input ("hora de incidente: " )
+
+
+incidenteL.append("Lugar: ")
+incidenteL.append(lugar)
+
+incidenteL.append("Tipo: ")
+incidenteL.append(tipo)
+
+incidenteL.append("damnificados: ")
+incidenteL.append(damnificados)
+
+incidenteL.append("dotacion: ")
+incidenteL.append(dotacion)
+
+incidenteL.append("fecha de salida: ")
+incidenteL.append(fecha_salida)
+
+incidenteL.append("hora de salida: ")
+incidenteL.append(hora_salida)
+
+incidenteL.append("fecha de retorno: ")
+incidenteL.append(fecha_retorno)
+
+incidenteL.append("hora de retorno: ")
+incidenteL.append(hora_retorno)
+
+incidenteL.append("moviles: ")
+incidenteL.append(moviles)
+
+incidenteL.append("daños: ")
+incidenteL.append(danios)
+
+incidenteL.append("hora de llegada al incidente: ")
+incidenteL.append(hora_de_llegada_al_incidente)
+
+incidenteL.append("hora_de_incidente: ")
+incidenteL.append(hora_de_incidente)
+
+for incidente1 in incidenteL:
+    print (incidente1)
+
 
 print("-------")
 print("-------")
@@ -156,7 +212,8 @@ l.append(cargo)
 l.append(cuartel)
 l.append(usuario)
 l.append(contrasenia)
-print(l)
+for bomberos1 in l:
+    print(bomberos1)
 
 
 
@@ -173,7 +230,5 @@ lr.append(patente)
 lr.append(seguro)
 lr.append(fechaVencimiento)
 lr.append(numPoliza)
-print(lr)
-
-
-
+for coche in lr:
+    print(coche)
