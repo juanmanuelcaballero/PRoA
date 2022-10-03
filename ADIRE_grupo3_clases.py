@@ -99,37 +99,46 @@ inicioSesion = input("Ingrese 1 para iniciar sesión y 2 para registrarse: ")
 
 if inicioSesion == "1":
     usuario = input("Usuario: ")
-    contraseña = input("Contraseña: \n")
+    contraseña = input("Contraseña: ")
 
 elif inicioSesion == "2":
     mail = input("Mail: ")
     usuario = input("Nombre de usuario: ")
-    contraseña = input("Contraseña: \n")
+    contraseña = input("Contraseña: ")
 
 else:
     print("Numero incorrecto")
 
-print("Ingrese un incidente ")
+print("\nIngrese un incidente")
 lugar = input("Lugar: ")
 tipo = input("Tipo: ")
 damnificado = input("Damnificado: ")
 dotacion = input("Dotación: ")
 fechaSalida = input("Fecha de salida: ")
-horaIncidente = input("Hora de incidente:  ")
 horaSalida = input("Hora de salida: ")
-moviles = input("Móviles: ")
-fechaRetorno = input("Fecha de retorno: ")
-daños = input("Daños: ")
 horaLlegadaDotacion = input("Hora de llegada de la dotación: ")
+fechaRetorno = input("Fecha de retorno: ")
+horaIncidente = input("Hora de incidente:  ")
+moviles = input("Móviles: ")
+daños = input("Daños: ")
 
-incidente = [lugar, tipo, damnificado, dotacion, fechaSalida, horaIncidente, horaSalida, moviles, fechaRetorno, daños, horaLlegadaDotacion]
-print(incidente,"\n")
+print("\n\n\nDatos recién ingresados:")
+print("\nLugar:", lugar)
+print("Tipo:", tipo)
+print("Damnificado:", damnificado)
+print("Dotación:", dotacion)
+print("Fecha de salida:", fechaSalida)
+print("Hora de salida:", horaSalida)
+print("Hora de llegada de la dotación:", horaLlegadaDotacion)
+print("Fecha de retorno:", fechaRetorno)
+print("Hora de incidente", horaIncidente)
+print("Móviles:", moviles)
+print("Daños:", daños)
 
-
-ingresos = input("Ingrese 1 si es persona, 2 si es vehículo o 3 para dotación: ")
+ingresos = input("\nIngrese 1 si es persona, 2 si es vehículo o 3 para dotación: ")
 
 if ingresos == "1":
-    print("Ingrese una persona")
+    print("\nIngrese una persona")
     nombre = input("Nombre: ")
     apellido = input("Apellido: ")
     dni = input("DNI: ")
@@ -140,27 +149,43 @@ if ingresos == "1":
     contraseña = input("Contraseña: ")
     gmail = input("Gmail: ")
     telefono = input("Numero de teléfono: ")
-    mostrarPersonas = [nombre, apellido, dni, fechaNacimiento, cargo, cuartel, usuario, contraseña, gmail, telefono, persona1, persona2, persona3, persona4, persona5, persona6, persona7, persona8, persona9, persona10]
-    print(mostrarPersonas)
+    print("\n\n\nDatos recién ingresados:")
+    print("\nNombre:", nombre)
+    print("Apellido:", apellido)
+    print("DNI:", dni)
+    print("Fecha de nacimiento:", fechaNacimiento)
+    print("Cargo:", cargo)
+    print("Cuartel:", cuartel)
+    print("Usuario:", usuario)
+    print("Contraseña", contraseña)
+    print("Gmail:", gmail)
+    print("Teléfono:", telefono)
 
 elif ingresos == "2":
-    print("Ingrese un vehículo")
+    print("\nIngrese un vehículo")
     matricula = input("Número de matrícula: ")
     fechaVencimiento = input("Fecha de vencimiento: ")
     numeroPoliza = input("Número de póliza: ")
     seguro = input("Seguro: ")
-    mostrarVehiculos = [matricula, fechaVencimiento, numeroPoliza, seguro, vehiculo1, vehiculo2, vehiculo3]
-    print(mostrarVehiculos)
+    print("\n\n\nDatos recién ingresados:")
+    print("\nMatrícula:", matricula)
+    print("Fecha de vencimiento:", fechaVencimiento)
+    print("Número de póliza:", numeroPoliza)
+    print("Seguro:", seguro)
 
 elif ingresos == "3":
-    print("Ingrese una dotación")
+    print("\nIngrese una dotación")
     nombre = input("Ingrese nombre: ")
     apellido = input("Ingrese apellido: ")
     dni = input("Ingrese DNI: ")
     direccion = input("Ingrese dirección: ")
     ubicacion = input("Ingrese ubicación: ")
-    mostrarDotaciones = [nombre, apellido, dni, direccion, ubicacion]
-    print(mostrarDotaciones)
+    print("\n\n\nDatos recién ingresados:")
+    print("\nNombre:", nombre)
+    print("Apellido:", apellido)
+    print("DNI:", dni)
+    print("Dirección:", direccion)
+    print("Ubicación:", ubicacion)
     
 else:
     print("Número incorrecto")
