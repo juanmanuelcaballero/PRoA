@@ -48,9 +48,7 @@ persona6=("Lucila","petillo","los manantiales","8_9_1999","46578876","5656565656
 persona7=("mirena","torres","las verbenas","4_8_1990","46578875","4656475656","11.11.20","mirenatorres@gmail.com","cadete","villa cuidada parque","mirenatorres","mirena1234")
 persona8=("carmen","felipe","las verbenas","8_9_2000","56686767","4567454545","11.11.21","carmenfelipe@gmail.com","cadete","villa general belgrano","carmenfelipe","carmen1234")
 persona9=("martina","praniuk","la cumbrecita","3_7_2000","56567567","5656565656","1.11.21","martinapraniuk@gmail.com","cadete","villa cuidad parque","martinapraniuk","martina1234")
-persona10=("virginia","lopez","las verbenas","3_6_2000","46756456","4567767676","11.33.55","virginialopez@gmail.com","cadete","villa general belgrano","virginialopez","virginia234")
-def __str__ (self):
-    return f" {self.nombre} {apellido} vive en: {self.direccion} nacio: {self.fecha_de_nacimiento} su DNI es: {self.DNI} su numero de telefono es: {self.numero_de_telefono} su direccion ID: {self.ID} su mail es: {self.gmail} su cargo es: {self.rango_cargo} pertenece al cuartel: {self.cuartel} nombre de usuario: {self.usuario} contraseña: NO VICIBLE"      
+persona10=("virginia","lopez","las verbenas","3_6_2000","46756456","4567767676","11.33.55","virginialopez@gmail.com","cadete","villa general belgrano","virginialopez","virginia234")     
 a = input("Nombre: ")
 b = input("Apellido: ")
 c = input("direccion")
@@ -63,8 +61,8 @@ i = input("Cargo: ")
 j = input("Cuartel: ")
 k = input("Nombre de usuario: ")
 l = input("Contraseña: ")
-persona2 = (a,b,c,d,e,f,g,h,i,j,k,l)
-print(persona2)
+persona11 = (a,b,c,d,e,f,g,h,i,j,k,l)
+print(persona11.nombre, persona11.apellido, "vive en:", persona11.direccion, "nacio:", persona11.fecha_de_nacimiento, "su DNI es:", persona11.DNI, "su numero de telefono es:", persona11.numero_de_telefono, "su direccion ID:", persona11.ID, "su mail es:", persona11.gmail, "su cargo es:", persona11.rango_cargo, "pertenece al cuartel:", persona11.cuartel, "nombre de usuario:", persona11.usuario, "contraseña: NO VICIBLE")
 class incidente:
     def __init__(self, ubicacion_del_incidente, tipo_de_incidente, damnificado, dotacion, fecha_de_salida, hora_de_salida, fecha_de_retorno, hora_de_retorno, datos_del_informante, moviles, daños, hora_del_incidente, hora_de_llegada, hora_de_llegada_de_la_dotacion_al_lugar_del_incidente):
         self.ubicacion_del_incidente=ubicacion_del_incidente
