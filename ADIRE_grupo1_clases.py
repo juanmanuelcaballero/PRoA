@@ -55,7 +55,7 @@ c = input("direccion")
 d = input("Fecha de nacimento: ")
 e = input("DNI: ")
 f = input("Numero de telefono: ")
-g = input("ID: ")
+g = input("ID: ")x
 h = input("gmail: ")
 i = input("Cargo: ")
 j = input("Cuartel: ")
@@ -64,6 +64,7 @@ l = input("Contraseña: ")
 persona11 = (a,b,c,d,e,f,g,h,i,j,k,l)
 print(persona11.nombre, persona11.apellido, "vive en:", persona11.direccion, "nacio:", persona11.fecha_de_nacimiento, "su DNI es:", persona11.DNI, "su numero de telefono es:", persona11.numero_de_telefono, "su direccion ID:", persona11.ID, "su mail es:", persona11.gmail, "su cargo es:", persona11.rango_cargo, "pertenece al cuartel:", persona11.cuartel, "nombre de usuario:", persona11.usuario, "contraseña: NO VICIBLE")
 class incidente:
+    
     def __init__(self, ubicacion_del_incidente, tipo_de_incidente, damnificado, dotacion, fecha_de_salida, hora_de_salida, fecha_de_retorno, hora_de_retorno, datos_del_informante, moviles, daños, hora_del_incidente, hora_de_llegada, hora_de_llegada_de_la_dotacion_al_lugar_del_incidente):
         self.ubicacion_del_incidente=ubicacion_del_incidente
         self.tipo_de_incidente=tipo_de_incidente
